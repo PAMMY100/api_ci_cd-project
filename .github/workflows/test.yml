@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Test Step
-        run: echo " Running Test cases."
+        run: echo " Running Test cases..."
   deploy:
     runs-on: ubuntu-latest
     steps:
