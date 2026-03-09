@@ -9,8 +9,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Run if branch is main
-        if: ${{ github.ref == 'refs/heads/main' }}
-        run: echo "Running on main"
+        if: ${{ github.ref_name == 'main' }}
+        run: echo "Running on main."
       - name: Run if branch is develop
         if: ${{ github.ref == 'refs/heads/develop' }}
-        run: echo "Running on develop"
+        run: echo "Running on develop."
